@@ -26,6 +26,14 @@ gem "twitter-bootstrap-rails", github: 'seyhunak/twitter-bootstrap-rails'
 # gem "slim-rails",              github: 'leogalmeida/slim-rails'
 gem "slim-rails",              github: 'alindeman/slim-rails', branch: 'rails4'
 
+group :development do
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'pry-rails'
+  gem 'pry-remote'
+  gem 'pry-debugger'
+end
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
