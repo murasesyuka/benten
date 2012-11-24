@@ -1,0 +1,12 @@
+div.container-fluid
+  div.row-fluid
+    div.span4
+      div id="comment_area"
+        ul id="comments"
+    div.span8.offset5
+      == form_for @comment do |f|
+        == f.text_field :body, class: "span9", placeholder: "Type message…"
+        == button_tag id:'send_comment', class: "btn btn-primary" do
+          == t 'Send'
+      div id="video_area"
+
